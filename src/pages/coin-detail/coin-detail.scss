@@ -1,0 +1,38 @@
+page-coin-detail {
+
+    .coin-detail-grid{
+        // background-color: azure;
+    }
+
+    h1{
+        //background-color: aliceblue;
+        
+    }
+
+    .price{ 
+        font-size: 2em;
+        color: royalblue;
+        margin: 1px;
+
+        .prefix{
+            font-size: 1em;
+        }
+    }
+
+    .prefix{
+        color: grey;
+    }
+
+    .change{
+        font-size: 1.5em;
+        color: grey;
+    }
+
+    .scroll-content{
+        background-color: #b8bc9c;
+        color:#63665f;
+    }
+
+}
+
+

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="secondary">
+      <ion-buttons start>
+          <button ion-button icon-only menuToggle>
+              <ion-icon name="menu"></ion-icon>
+            </button>   
+        </ion-buttons>    
+    
+    <ion-title color="primary">Crypto-Watch</ion-title>
+    <ion-buttons end>
+      <button  ion-button icon-only (click)="onRefresh()">
+        <ion-icon name="refresh"></ion-icon>
+      </button>
+    </ion-buttons>    
+  </ion-navbar>
+</ion-header>
+
+  <ion-content padding >
+
+    <ion-card *ngFor="let coin of Coinslist" (click)="onCardClick(coin)">
+      <!-- <img src="/img/nin-live.png"/> -->
+      <ion-card-content>
+        <ion-card-title >
+          {{coin.name}}
+          </ion-card-title>
+        <p>
+          {{coin.price_inr}}
+        </p>
+      </ion-card-content> 
+    </ion-card>
+  
+    
+  
+  </ion-content>
